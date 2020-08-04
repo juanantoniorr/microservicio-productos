@@ -16,7 +16,7 @@ import com.proyecto.springboot.app.productos.models.service.IProductoService;
 @RestController
 @RequestMapping("/api/productos")
 public class ProductosController {
-	@Value("${server.port}")
+	@Value("${server.port}") //Tenemos las 2 formas de tomar variables del properties
 	private Integer puerto;
 	@Autowired
 	private Environment env;
